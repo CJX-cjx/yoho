@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:background="#fff"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imgGoods_rvRecommend_cardGoods"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgGoods_rvRecommend_cardGoods"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="123"
+        android:textColor="#000"
+        android:id="@+id/goodsIntroduce_rvRecommend_cardGoods"/>
+
+    <TextView
+        android:id="@+id/price_rvRecommend_cardGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goodsIntroduce_rvRecommend_cardGoods"
+        android:text="456"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/dp_10"/>
+    
+    <ImageView
+        android:src="@drawable/add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/goodsIntroduce_rvRecommend_cardGoods"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

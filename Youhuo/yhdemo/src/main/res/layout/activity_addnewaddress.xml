@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#333"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/back_addNewAddress"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址管理"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="#eee"
+        android:layout_marginTop="@dimen/dp_40"
+        android:id="@+id/line_addNewAddress"/>
+    <LinearLayout
+        android:id="@+id/linear_addNewAddress"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_addNewAddress"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人 :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userName"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2_addNewAddress"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_addNewAddress"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话 :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_addNewAddress"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear3_addNewAddress"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear2_addNewAddress"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在地区 :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/area_addNewAddress"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear4_addNewAddress"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear3_addNewAddress"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址 :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_addNewAddress"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@null"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear5_addNewAddress"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear4_addNewAddress"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置标签 :"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/home_addNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/company_addNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/school_addNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学校"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/else_addNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="保存"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:id="@+id/saveAddress"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/linear5_addNewAddress"
+        android:background="@drawable/bg_addaddress"/>
+</RelativeLayout>

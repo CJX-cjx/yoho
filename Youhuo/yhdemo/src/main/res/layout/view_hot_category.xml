@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/hotCategory"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_width="25dp"
+            android:layout_height="2dp"
+            android:background="#000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="热门推荐"
+            android:id="@+id/hotCategory"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hotCategory"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="25dp"
+            android:layout_height="2dp"
+            android:background="#000"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

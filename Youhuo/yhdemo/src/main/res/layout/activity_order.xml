@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl_order"
+            android:layout_width="match_parent"
+            android:background="#333"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/back_order"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="订单"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:textSize="17sp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_order"
+        android:text="菲菲呃"
+        android:id="@+id/orderNumber"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/orderNumber"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/goodsImg_order"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <TextView
+            android:id="@+id/goodsName_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_toRightOf="@+id/goodsImg_order"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/goodsColor_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/goodsImg_order"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_below="@+id/goodsName_order"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

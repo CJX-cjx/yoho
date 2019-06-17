@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.bwie.servicemodule.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#31a0f2"
+        app:month_view="com.bwie.servicemodule.calendarview.index.IndexMonthView"
+        app:week_view="com.bwie.servicemodule.calendarview.index.IndexWeekView"
+        app:week_bar_view="com.bwie.servicemodule.calendarview.WeekBar"
+        app:month_view_show_mode="mode_only_current"
+        app:calendar_height="50dp"
+        app:min_year="2004"
+        app:scheme_text="假"
+        app:week_start_with="mon"
+        app:week_background="#31a0f2"
+        app:week_text_color="#fff"
+        app:current_month_text_color="#fff"
+        app:current_month_lunar_text_color="#fff"
+        app:current_day_lunar_text_color="#f26631"
+        app:current_day_text_color="#f26631"
+        />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_goodsActivity"
+        android:layout_above="@+id/line2_goodsActivity"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_goodsActivity"
+        android:alpha="0"
+        android:background="#000"
+        android:layout_height="@dimen/dp_40">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:background="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/back_goodsActivity"/>
+        <TextView
+            android:textColor="#fff"
+            android:text="商品详情"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:background="@drawable/bg1_imgefe"
+            android:src="@drawable/mine_memberbill_share_bg"
+            android:id="@+id/share_goodsActivity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/more_goodsActivity"
+            />
+        <ImageView
+            android:src="@drawable/banner_more"
+            android:background="@drawable/bg1_imgefe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/more_goodsActivity"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gouwuche"
+        android:gravity="center|right"
+        android:layout_width="45dp"
+        android:layout_above="@+id/line2_goodsActivity"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shared_cart_icon_40"/>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/goodsNum"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:text="2"
+            android:background="@drawable/bg_goods_num_pop"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2_goodsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rl_bottom_goodsActivity"/>
+    
+    <RelativeLayout
+        android:id="@+id/rl_bottom_goodsActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/zaixiankefu"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线客服"
+            android:textColor="#000"
+            android:drawableTop="@drawable/prd_cs_service"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/pinpaidianpu"
+            android:layout_toRightOf="@+id/zaixiankefu"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品牌店铺"
+            android:textColor="#000"
+            android:drawableTop="@drawable/prd_cs_service"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/pinpaidianpu"
+            android:id="@+id/collect_goodsActivity"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:textColor="#888"
+            android:drawableTop="@drawable/js_plustar_images_gray_heart" />
+        <TextView
+            android:id="@+id/add_goodsActivity"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:text="加入购物车"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40">
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/cancel_personal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="取消"
+        android:textColor="#000"
+        android:background="@drawable/bg_tv_personal"
+        android:gravity="center"/>
+
+</RelativeLayout>

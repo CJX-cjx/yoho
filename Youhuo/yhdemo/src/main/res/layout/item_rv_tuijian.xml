@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:background="#fff"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:background="#e744e7"
+        android:layout_width="130dp"
+        android:id="@+id/img_rvTuijian"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_tuijian"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/img_rvTuijian"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

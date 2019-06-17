@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/enter_pwd_not_select"
+        android:id="@+id/isSelected_rvGoods_carGoods"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/imgGoods_rvGoods_carGoods"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/isSelected_rvGoods_carGoods"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sp_15"
+        android:text="123"
+        android:textColor="#000"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/goodsName_rvGoods_carGoods"
+        android:layout_toRightOf="@+id/imgGoods_rvGoods_carGoods"/>
+    <TextView
+        android:id="@+id/num_rvGoods_cardGoods"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="x 1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/goodsName_rvGoods_carGoods"/>
+    <TextView
+        android:id="@+id/color_rvGoods_cardGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goodsName_rvGoods_carGoods"
+        android:text="456"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@+id/imgGoods_rvGoods_carGoods"/>
+    <TextView
+        android:id="@+id/size_rvGoods_cardGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="789"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_below="@+id/goodsName_rvGoods_carGoods"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/color_rvGoods_cardGoods"/>
+    <TextView
+        android:id="@+id/price_rvGoods_cardGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color_rvGoods_cardGoods"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgGoods_rvGoods_carGoods"
+        android:textColor="#f00"
+        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="165165"/>
+
+</RelativeLayout>

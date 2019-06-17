@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="150dp">
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:id="@+id/banner_look_show"
+        android:layout_height="130dp">
+
+    </com.youth.banner.Banner>
+
+    <LinearLayout
+        android:alpha="0.3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="65dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_linear_indicator"
+        android:layout_height="10dp">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/indicatorOne"
+            android:layout_width="7dp"
+            android:background="@drawable/indictor_banner_normal"
+            android:layout_height="7dp" />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/indicatorTwo"
+            android:layout_width="7dp"
+            android:text="123"
+            android:background="@drawable/indictor_banner_normal"
+            android:layout_height="7dp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/indicatorThree"
+            android:layout_width="7dp"
+            android:background="@drawable/indictor_banner_normal"
+            android:layout_height="7dp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/indicatorFour"
+            android:layout_width="7dp"
+            android:background="@drawable/indictor_banner_normal"
+            android:layout_height="7dp" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/indicatorFive"
+            android:layout_width="7dp"
+            android:background="@drawable/indictor_banner_normal"
+            android:layout_height="7dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/dp_10" />
+
+</RelativeLayout>

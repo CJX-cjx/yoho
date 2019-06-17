@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="60dp">
+    
+    <TextView
+        android:id="@+id/tvTltle_brandRv"
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="A"
+        android:textStyle="bold"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvBody_brandRv"
+        android:layout_below="@+id/tvTltle_brandRv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="AAA"
+        android:textColor="#000"/>
+    
+    <TextView
+        android:id="@+id/tvHotBrandRv"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:text="HOT"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@+id/tvBody_brandRv"
+        android:background="@drawable/bg_tv_rv_brand"/>
+
+</RelativeLayout>

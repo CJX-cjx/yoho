@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/umeng_socialize_fav"
+        android:id="@+id/imgHead_head_brandActivity"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/icon_dianpu"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/name_dianpu"
+        android:textColor="#f00"
+        android:textStyle="bold"
+        android:text="123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_dianpu"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_alignBottom="@+id/icon_dianpu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="#f00"
+        android:text="收藏"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#fff"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="65dp"
+        />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/ic_heart_fill"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imgHead_head_brandActivity"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="首页"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#888"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#888"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="新品"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#888"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#888"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="全部商品"/>
+
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:id="@+id/banner_head_brand_activity"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imgHead_head_brandActivity"
+        android:layout_marginTop="@dimen/dp_40">
+
+    </com.youth.banner.Banner>
+
+</RelativeLayout>

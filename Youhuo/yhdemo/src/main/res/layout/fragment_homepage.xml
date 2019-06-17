@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ptr_homepage"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_goods_homepage"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/titleBg_homepage"
+        android:alpha="0"
+        android:background="#000"
+        android:layout_height="50dp">
+
+    </RelativeLayout>
+
+    <include layout="@layout/head_homepage"
+        android:layout_alignParentTop="true"
+        android:id="@+id/head_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/head_homepage"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_category_homepage"
+        android:layout_height="50dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

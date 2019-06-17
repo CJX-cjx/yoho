@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#00000000"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:background="@drawable/navbar_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/menu_head_homepage"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:background="@drawable/navbar_qrcode"
+        android:layout_toLeftOf="@+id/message_head_homepage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/saoma_head_homepage"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:background="@drawable/navbar_msg"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/message_head_homepage"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_centerVertical="true"/>
+    
+    <RelativeLayout
+        android:background="@drawable/bg_head_rl"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/saoma_head_homepage"
+        android:layout_toRightOf="@+id/menu_head_homepage"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:background="@drawable/navbar_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/search_head"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/search_head"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="#666"
+            android:text="把产品经理给我盘了 !"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

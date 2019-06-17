@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:layout_height="240dp">
+
+    <TextView
+        android:id="@+id/tvNew"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="NEW"
+        android:textSize="10sp"
+        android:background="#0f0"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_below="@+id/tvNew"
+        android:id="@+id/img_rv_brand_activity"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_rv_brand_activity"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="#222"
+        android:text="123"
+        android:id="@+id/tv_goodsName_brandActivity"/>
+
+    <TextView
+        android:id="@+id/tvPrice_brandActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_below="@+id/tv_goodsName_brandActivity"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="efef"/>
+
+
+</RelativeLayout>

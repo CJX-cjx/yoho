@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwie.servicemodule" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name="com.bwie.servicemodule.App">
+        <!--Sugar框架本地数据存储配置-->
+        <meta-data android:name="DATABASE"
+            android:value="zxy.db"/>
+        <meta-data android:name="VERSION"
+            android:value="1"/>
+        <meta-data android:name="QUERY_LOG"
+            android:value="true"/>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.bwie.servicemodule.bean"/>
+    </application>
+
+</manifest>

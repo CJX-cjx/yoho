@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="280dp">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/img_rvGoods"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_below="@+id/img_rvGoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_introduce_rvGoods"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tvPrice_rvGoods"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:textColor="#f00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_introduce_rvGoods"
+        android:layout_marginTop="15dp"/>
+
+    <com.umeng.soexample.mvp.ui.widget.TextView_homepage
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOriginalPrice_rvGoods"
+        android:layout_toRightOf="@+id/tvPrice_rvGoods"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_introduce_rvGoods"
+        android:textColor="#ffaaaaaa"/>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/nameAddress"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="麻瓜胖"/>
+        <TextView
+            android:background="@drawable/bg_sign_address"
+            android:id="@+id/signAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="公司"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@+id/nameAddress"/>
+        <TextView
+            android:id="@+id/phoneAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="123154154541"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_below="@+id/nameAddress"
+            android:layout_marginTop="5dp"
+            android:id="@+id/areaAddress"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameAddress"
+            android:layout_toRightOf="@+id/areaAddress"
+            android:text="654"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="5dp"
+            android:id="@+id/detailAddress"/>
+    </RelativeLayout>
+</RelativeLayout>

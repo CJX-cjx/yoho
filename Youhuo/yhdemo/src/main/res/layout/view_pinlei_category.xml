@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvLeft_category"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp_10"
+        android:id="@+id/ptr_category"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_marginLeft="100dp"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rvGoods_category"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_goodsActivity"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动和服务"
+            android:id="@+id/tv_sl_goodsActivity"
+            android:layout_margin="@dimen/dp_10"/>
+
+        <TextView
+            android:background="#ccc"
+            android:textColor="#000"
+            android:text="促销"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:id="@+id/tv_cuxiao"
+            android:layout_below="@+id/tv_sl_goodsActivity"
+            android:layout_marginLeft="@dimen/dp_10"/>
+        <TextView
+            android:id="@+id/tv_vip"
+            android:background="#ccc"
+            android:textColor="#000"
+            android:text="VIP价全开启"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/tv_cuxiao"
+            android:layout_below="@+id/tv_sl_goodsActivity"
+            android:layout_marginLeft="@dimen/dp_10"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:layout_below="@+id/rl_goodsActivity"
+        android:layout_marginBottom="41dp"
+        android:layout_width="match_parent"
+        android:id="@+id/ev"
+        android:layout_height="wrap_content">
+
+    </ExpandableListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:background="#ccc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:textColor="#222"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="清空"
+            android:background="#fff"
+            android:id="@+id/clear_goodsActivity"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textColor="#fff"
+            android:background="#222"
+            android:id="@+id/sure_goodsActivity"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

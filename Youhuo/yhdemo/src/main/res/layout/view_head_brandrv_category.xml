@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_brand"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/bg_brand_head_rl"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:background="@drawable/navbar_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索品牌"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"/>
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:layout_below="@+id/rl_brand"
+        android:layout_width="match_parent"
+        android:id="@+id/banner_brand_category"
+        android:layout_height="150dp">
+
+    </com.youth.banner.Banner>
+
+    <TextView
+        android:id="@+id/line_brand"
+        android:layout_width="match_parent"
+        android:background="#eee"
+        android:layout_below="@+id/banner_brand_category"
+        android:layout_height="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:text="推荐品牌"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/line_brand"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_categoryBrandHead"
+        android:layout_below="@+id/tv_brand"
+        android:layout_height="150dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/line1_brand"
+        android:layout_width="match_parent"
+        android:background="#eee"
+        android:layout_below="@+id/rv_categoryBrandHead"
+        android:layout_height="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_below="@+id/line1_brand"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="全部品牌"
+            android:textColor="#000"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#aaa"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="新入驻品牌"
+            android:textColor="#aaa"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="#aaa"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="热门品牌"
+            android:textColor="#aaa"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

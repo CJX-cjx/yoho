@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_one" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_two" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_three" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_four" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_five" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_six" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_seven" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_eight" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_nine" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_ten" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_eleven" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_twelve" android:duration="50"/>
+    <item android:drawable="@drawable/yoho_sdk_view_dialog_loadingdialog_boy_thirteen" android:duration="50"/>
+</animation-list>

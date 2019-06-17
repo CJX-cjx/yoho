@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="球鞋交易"
+        android:textSize="@dimen/sp_18"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/js_img_nfc"
+            android:layout_width="@dimen/dp_40"
+            android:layout_marginLeft="20dp"
+            android:layout_height="@dimen/dp_40" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/bg_brand_head_rl"
+            android:layout_height="@dimen/dp_40">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="20dp"
+                android:background="@drawable/navbar_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:text="搜索商品名称或货号"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/js_img_type"
+            android:layout_width="@dimen/dp_40"
+            android:layout_marginLeft="20dp"
+            android:layout_height="@dimen/dp_40" />
+
+    </RelativeLayout>
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/ptr_shoesDeal"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_shoesDeal"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+</RelativeLayout>

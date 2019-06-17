@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="470dp">
+
+    <com.umeng.soexample.app.utils.CircleImageView
+        android:layout_width="30dp"
+        android:id="@+id/cIv_look_show"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/dp_10"/>
+
+    <TextView
+        android:id="@+id/nickName_lookShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cIv_look_show"
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:text="123"/>
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/imgShow"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/cIv_look_show"/>
+
+    <RelativeLayout
+        android:id="@+id/rlLookShow"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imgShow"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/goodsImgShow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/goodsImgShow"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:text="123"
+            android:layout_marginTop="7dp"
+            android:id="@+id/goodsName"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:text="456"
+            android:textColor="#f00"
+            android:layout_toRightOf="@+id/goodsImgShow"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/priceLookShow"/>
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlLookShow"
+        android:layout_height="35dp">
+        
+        <ImageView
+            android:background="@drawable/js_goodgoodsrecommend_image_unlike"
+            android:layout_width="17.5dp"
+            android:id="@+id/imgZanLookShow"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_height="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888"
+            android:text="000"
+            android:id="@+id/ZanNumLookShow"
+            android:layout_toRightOf="@+id/imgZanLookShow"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:background="@drawable/js_newarrival_image_more"
+            android:layout_width="22dp"
+            android:id="@+id/imgMoreLookShow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_height="4dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/dp_10" />
+
+</RelativeLayout>

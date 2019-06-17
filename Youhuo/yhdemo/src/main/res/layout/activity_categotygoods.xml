@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="#333"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:background="@drawable/community_shared_back_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_goodsActivity"/>
+
+        <TextView
+            android:id="@+id/goodsName_categoryActivity"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back_goodsActivity"
+            android:layout_marginLeft="5dp"
+            android:text="123"/>
+
+        <ImageView
+            android:id="@+id/more_goodsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/js_newarrival_image_more"/>
+
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_width="match_parent"
+        app:tl_textSelectColor="#000"
+        app:tl_textsize="15sp"
+        app:tl_divider_width="1dp"
+        app:tl_divider_color="@color/grey"
+        app:tl_indicator_color="#000"
+        app:tl_textUnselectColor="@color/grey"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_height="40dp"
+        android:id="@+id/stl_goodsActivity">
+
+    </com.flyco.tablayout.SlidingTabLayout>
+
+    <ImageView
+        android:background="@drawable/js_brandstore_image_filter_3_down"
+        android:id="@+id/imgMoren_goodsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="50dp"/>
+    <ImageView
+        android:background="@drawable/js_brandstore_image_filter_shared_segmentedcontrol_other_normal"
+        android:id="@+id/imgUp_goodsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="85dp"/>
+    <ImageView
+        android:background="@drawable/filtrate"
+        android:id="@+id/imgShaixuan_goodsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/stl_goodsActivity"
+        android:id="@+id/linear_goodsActivity"
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:background="@drawable/shop_ufo_icon"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:background="@drawable/shoppingcart_package"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vp_goodsActivity"
+        android:layout_below="@+id/linear_goodsActivity"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

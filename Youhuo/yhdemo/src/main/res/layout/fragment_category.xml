@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/navbar_menu"
+            android:id="@+id/img_menu_Category"/>
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="品类"
+                android:id="@+id/tv_pinlei"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/line_pinlei"
+                android:layout_width="75dp"
+                android:layout_height="3dp"
+                android:background="#fff"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="品牌"
+                android:id="@+id/tv_brand"
+                android:layout_alignParentRight="true"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/line_brand"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="75dp"
+                android:layout_height="3dp"
+                android:background="#fff"
+                android:layout_marginBottom="1dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/tv_Men_category"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Men"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ccc"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_Women_category"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Women"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ccc"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_Kids_category"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Kids"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="#ccc"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_BLK_category"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Blk"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/line_category"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginTop="100dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/line_category"
+        android:id="@+id/fLayout_category"
+        android:layout_height="match_parent">
+
+
+
+    </FrameLayout>
+</RelativeLayout>
